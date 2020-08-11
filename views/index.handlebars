@@ -1,8 +1,64 @@
 {{!-- Should be able to start working on the layout and style.  --}}
-<h1>Index
 
-</h1>
+{{!-- Navbar --}}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Wayne Collier</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link active" href="#">Intrest <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Techs</a>
 
+            <div class="spinner-grow text-primary" role="status">
+
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+
+            </div>
+            <div class="spinner-grow text-success" role="status">
+
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+
+            </div>
+            <div class="spinner-grow text-info" role="status">
+
+            </div>
+            <div class="spinner-grow text-light" role="status">
+
+            </div>
+            <div class="spinner-grow text-dark" role="status">
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+{{!-- Top section --}}
+<div class='ml-5'>
+    <h1>Wayne Collier
+
+    </h1>
+    <h3>Software Developer and</h3>
+    <h3>Technologiest</h3>
+    <h2>Provide a short explanation of how</h2>
+    <h2>List the prizes that contestants can win!</h2>
+
+    <button type="button" class="btn btn-secondary">ENTER NOW</button>
+
+    <h2>Share this contest with your friends:</h2>
+    <i class="fab fa-facebook-square fa-3x"></i>
+    <i class="fab fa-linkedin fa-3x"></i>
+
+</div>
+
+{{!-- Tech Section --}}
 <ul>
     {{#each tech}}
     <div class='tech'>{{this.tecName}} </div>
