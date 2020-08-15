@@ -47,12 +47,146 @@ h2 {
   margin-top: 300px;
 }
 
+.fadeMove {
+  font-size: 90px;
+}
+.move1 {
+  position: absolute;
+  top: 80px;
+  margin-top: 20px !important;
+  margin-left: 4px;
+  animation-duration: 20s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+.move2 {
+  position: absolute;
+  top: 150px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 16s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+.move3 {
+  position: absolute;
+  top: 615px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 7s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+.move4 {
+  position: absolute;
+  top: 264px;
+  margin-top: 20px !important;
+  margin-left: 13px;
+  animation-duration: 18s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+
+.move5 {
+  position: absolute;
+  top: 324px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 10s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+
+.move6 {
+  position: absolute;
+  top: 468px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 5s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+
+.move7 {
+  position: absolute;
+  top: 570px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 4s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+
+.move8 {
+  position: absolute;
+  top: 860px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 8s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+
+.move9 {
+  position: absolute;
+  top: 900px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 20s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+
+.move10 {
+  position: absolute;
+  top: 532px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 16s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+
+.move11 {
+  position: absolute;
+  top: 734px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 14s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+
+.move12 {
+  position: absolute;
+  top: 850px;
+  margin-top: 20px !important;
+  margin-left: 8px;
+  animation-duration: 18s;
+  animation-name: fadeOut;
+  animation-iteration-count: infinite;
+}
+
+/* .fadeMove {
+  animation: my-awesome-beboop 1s, pause-between-iterations 4s;
+} */
+
 .animate {
   margin-top: -500px;
   font-size: 400px;
-  opacity: 0.1;
+  color: rgb(235, 39, 39);
+  opacity: 0.2;
   animation-duration: 15s;
   animation-name: slideover;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: forward; */
+}
+.animate2 {
+  margin-top: -200px;
+  font-size: 400px;
+  opacity: 0.1;
+  animation-duration: 15s;
+  animation-name: slideover2;
   animation-iteration-count: infinite;
   /* animation-direction: forward; */
 }
@@ -71,6 +205,18 @@ h2 {
 
 @keyframes slideover {
   from {
+    margin-top: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideover2 {
+  from {
     margin-left: 100%;
     width: 300%;
   }
@@ -78,5 +224,45 @@ h2 {
   to {
     margin-left: 0%;
     width: 100%;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    opacity: 15%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 0%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .animate {
+    margin-top: -500px;
+    font-size: 200px;
+    color: rgb(235, 39, 39);
+    opacity: 0.2;
+    animation-duration: 15s;
+    animation-name: slideover;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: forward; */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .animate {
+    margin-top: -500px;
+    font-size: 200px;
+    color: rgb(235, 39, 39);
+    opacity: 0.2;
+    animation-duration: 15s;
+    animation-name: slideover;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: forward; */
   }
 }
