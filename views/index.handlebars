@@ -1,16 +1,24 @@
 {{!-- Should be able to start working on the layout and style.  --}}
 
+{{!-- JS --}}
+<script>
+    function onclickLine() {
+        console.log("click click")
+    }
+</script>
+
 {{!-- Navbar --}}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Wayne Collier</a>
+    {{!-- <a class="navbar-brand" href="#"></a> --}}
+    <a href="#" class="pull-left"><img src="/assets/images/Logo1.png" width="100" height='100'></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-link active" href="#">Intrest <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Techs</a>
+            <a class="nav-link active" href=".tech">Intrest <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href=".tech">Techs</a>
             <div class="spinner-grow text-secondary" role="status">
             </div>
         </div>
@@ -22,36 +30,95 @@
     <div class="wayne">Wayne Collier</div>
     <div class="info">
         <h2>Software Developer and <br>Technologiest</h2>
-        <h4>Provide a short explanation of how <br>List the prizes that contestants can win!</h4>
+        <div class='badassSpace'>
+            <h4>Just a bunch of stuff that I want to try. <br>Its alwasy changing!</h4>
+
+        </div>
+    </div>
+    {{!-- a tag the buttons --}}
+    <div class="svg-wrapper mt-5">
+        <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" height="60" width="320" />
+            <div class="text">Just a cool little button</div>
+        </svg>
+    </div>
+    {{!-- <button type="button" class="btn btn-secondary enterBut">Just a cool little Button</button> --}}
+    <div class="social">
+        <button type="button" class="fBook"><i class="fab fa-facebook-square fa-3x"></i></button>
+        <button type="button" class="lIn"><i class="fab fa-linkedin fa-3x"></i></button>
+
     </div>
 
-    <button type="button" class="btn btn-secondary enterBut">ENTER NOW</button>
-    <div class="share">Share this contest with your friends:</div>
-    <i class="fab fa-facebook-square fa-3x fBook"></i>
-    <i class="fab fa-linkedin fa-3x lIn"></i>
+    <div class='move1 fadeMove'>&#8711;</div>
+    <div class='move2 fadeMove'>&#8706;</div>
+    <div class='move3 fadeMove'>&#8707;</div>
+    <div class='move4 fadeMove'>&#8709;</div>
+    <div class='move5 fadeMove'>&#8704;</div>
+    <div class='move6 fadeMove'>&#8712;</div>
+    <div class='move7 fadeMove'>&#8713;</div>
+    <div class='move8 fadeMove'>&#8719;</div>
+    <div class='move9 fadeMove'>&#8721;</div>
+    <div class='move10 fadeMove'>&#9829;</div>
+    <div class='move11 fadeMove'>&#8364;</div>
+    <div class='move12 fadeMove'>&#8593;</div>
 
-</div>
-<div class='move1 fadeMove'>&#8711;</div>
-<div class='move2 fadeMove'>&#8706;</div>
-<div class='move3 fadeMove'>&#8707;</div>
-<div class='move4 fadeMove'>&#8709;</div>
-<div class='move5 fadeMove'>&#8704;</div>
-<div class='move6 fadeMove'>&#8712;</div>
-<div class='move7 fadeMove'>&#8713;</div>
-<div class='move8 fadeMove'>&#8719;</div>
-<div class='move9 fadeMove'>&#8721;</div>
-<div class='move10 fadeMove'>&#9829;</div>
-<div class='move11 fadeMove'>&#8364;</div>
-<div class='move12 fadeMove'>&#8593;</div>
+    <div class="animate">Badass</div>
 
-<div class="animate">Badass</div>
+    {{!-- a little about me --}}
 
-{{!-- Tech Section --}}
-<div class='tech'>
-    <ul>
-        {{#each tech}}
-        <div>{{this.tecName}} </div>
-        {{/each}}
-    </ul>
-</div>
-{{!-- <div class="animate2">I am</div> --}}
+    <div class="container  aboutMe">
+        <h3>Just a little about me!</h3>
+        <div class="row">
+
+            <div class='col'>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit officia consectetur amet cupiditate
+                    eaque animi ipsa rerum, optio assumenda sed quis voluptatibus doloremque neque temporibus illum
+                    debitis
+                    rem necessitatibus sapiente.
+                </p>
+            </div>
+            <div class='col'>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit officia consectetur amet cupiditate
+                    eaque animi ipsa rerum, optio assumenda sed quis voluptatibus doloremque neque temporibus illum
+                    debitis
+                    rem necessitatibus sapiente.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Tech Section --}}
+    <div class="container">
+        <div class='row tech'>
+
+            {{#each tech}}
+            <ul>
+                <div class="col">{{this.tecName}} </div>
+                <div class="col">{{this.descript}}</div>
+            </ul>
+
+            {{/each}}
+
+        </div>
+
+    </div>
+
+    {{!-- Circle test --}}
+
+    <div class="circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+        <div class="circle-multiple">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <div class="image2">
+        <img src="/assets/images/Logo1.png" alt="">
+    </div>

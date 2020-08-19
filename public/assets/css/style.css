@@ -1,5 +1,7 @@
 body {
   background-color: rgb(219, 219, 219) !important;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .wayne {
@@ -9,8 +11,12 @@ body {
   animation-name: slidein;
 }
 
+.badassSpace {
+  margin-top: 22%;
+}
+
 .info {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 4px;
   animation-duration: 3s;
   animation-name: slidein;
@@ -31,7 +37,15 @@ h2 {
   animation-name: slidein;
 }
 
+.aboutMe {
+  margin-top: 300px !important;
+}
+
 .enterBut {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.matrix {
 }
 
 .share {
@@ -43,8 +57,20 @@ h2 {
 .lIn {
 }
 
+.social {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
 .tech {
   margin-top: 300px;
+}
+
+.image2 {
+  margin: auto;
+  width: 50%;
+  text-align: center;
 }
 
 .fadeMove {
@@ -58,6 +84,7 @@ h2 {
   animation-duration: 20s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 .move2 {
   position: absolute;
@@ -67,6 +94,7 @@ h2 {
   animation-duration: 16s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 .move3 {
   position: absolute;
@@ -76,6 +104,7 @@ h2 {
   animation-duration: 7s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 .move4 {
   position: absolute;
@@ -85,6 +114,7 @@ h2 {
   animation-duration: 18s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 
 .move5 {
@@ -95,6 +125,7 @@ h2 {
   animation-duration: 10s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 
 .move6 {
@@ -105,6 +136,7 @@ h2 {
   animation-duration: 5s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 
 .move7 {
@@ -115,6 +147,7 @@ h2 {
   animation-duration: 4s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 
 .move8 {
@@ -125,6 +158,7 @@ h2 {
   animation-duration: 8s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 
 .move9 {
@@ -135,6 +169,7 @@ h2 {
   animation-duration: 20s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 
 .move10 {
@@ -145,6 +180,7 @@ h2 {
   animation-duration: 16s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 
 .move11 {
@@ -155,6 +191,7 @@ h2 {
   animation-duration: 14s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 
 .move12 {
@@ -165,6 +202,7 @@ h2 {
   animation-duration: 18s;
   animation-name: fadeOut;
   animation-iteration-count: infinite;
+  z-index: -3;
 }
 
 /* .fadeMove {
@@ -172,12 +210,13 @@ h2 {
 } */
 
 .animate {
-  margin-top: -500px;
+  margin-top: -760px;
   font-size: 400px;
   color: rgb(235, 39, 39);
   opacity: 0.2;
   animation-duration: 15s;
   animation-name: slideover;
+  z-index: -9;
   /* animation-iteration-count: infinite; */
   /* animation-direction: forward; */
 }
@@ -243,7 +282,7 @@ h2 {
 
 @media screen and (max-width: 992px) {
   .animate {
-    margin-top: -500px;
+    margin-top: -450px;
     font-size: 200px;
     color: rgb(235, 39, 39);
     opacity: 0.2;
@@ -254,7 +293,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .animate {
     margin-top: -500px;
     font-size: 200px;
@@ -262,7 +301,38 @@ h2 {
     opacity: 0.2;
     animation-duration: 15s;
     animation-name: slideover;
-    /* animation-iteration-count: infinite; */
-    /* animation-direction: forward; */
+
   }
+} */
+/*     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Just a cool little Button */
+
+.svg-wrapper {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: rgb(235, 39, 39);
+  opacity: 0.4;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
 }
